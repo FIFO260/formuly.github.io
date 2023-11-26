@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Svet Formule Home</title>
+</head>
+<body>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+
+    .navbar .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        overflow: hidden;
+        background-color: #ff0000;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .nav-item {
+        flex: 1;
+    }
+
+    .navbar .nav-link {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .navbar .nav-link:hover {
+        background-color: #111;
+    }
+
+    .image-container {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .sized-image {
+        width: 100vw;
+    }
+
+    .centered-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 0, 0);
+        font-size: 80px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace
+    }
+
+    .border {
+      margin: 5% auto 5% auto;
+      width: 80%;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .border table {
+      width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .border th, td {
+        text-align: left;
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .border th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+
+    .border tr:hover {
+        background-color: #e8f4ff;
+    }
+
+    .border tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .border tr:first-child:hover {
+        background-color: #f0f0f0;
+    }
+
+    @media (max-width: 600px) {
+    .navbar .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar .nav-item {
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar .nav-link {
+        padding: 10px;
+    }
+
+    .centered-text {
+        font-size: 40px;
+    }
+
+   
+}
+  </style>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="/">Domov</a></li>
+            <li class="nav-item"><a class="nav-link" href="/interesting_facts.html">Zaujimavosti</a></li>
+            <li class="nav-item"><a class="nav-link" href="/history.html">História</a></li>
+            <li class="nav-item"><a class="nav-link" href="/images.html">Obrázky</a></li>
+            <li class="nav-item"><a class="nav-link" href="/categories.html">Kategórie</a></li>
+        </ul>
+    </nav>
+
+    <div class="image-container">
+        <img src="./images/wrum.jpg" alt="Descriptive Text for Image" class="sized-image">
+        <div class="centered-text">Svet Formule</div>
+    </div>
+
+
+    <div class="border">
+        <table>
+          <tbody>
+              <tr>
+                  <td><b>JAZDCI</b></td>
+                  <td><b>TITULY</b></td>
+                  <td><b>PÓDIA</b></td>
+                  <td><b>POČET ŠTARTOV</b></td>
+              </tr>
+              <tr>
+                  <td>Lewis Hamilton</td>
+                  <td>7</td>
+                  <td>197</td>
+                  <td>331</td>
+              </tr>
+              <tr>
+                  <td>Charles Leclerc</td>
+                  <td>0</td>
+                  <td>28</td>
+                  <td>124</td>
+              </tr>
+              <tr>
+                  <td>Carlos Sainz</td>
+                  <td>0</td>
+                  <td>18</td>
+                  <td>184</td>
+              </tr>
+              <tr>
+                  <td>Max Verstappen</td>
+                  <td>3</td>
+                  <td>96</td>
+                  <td>184</td>
+              </tr>
+              <tr>
+                  <td>Sergio Perez</td>
+                  <td>0</td>
+                  <td>34</td>
+                  <td>257</td>
+              </tr>
+              <tr>
+                  <td>Fernando Alonso</td>
+                  <td>2</td>
+                  <td>106</td>
+                  <td>379</td>
+              </tr>
+              <tr>
+                  <td>Lando Norris</td>
+                  <td>0</td>
+                  <td>13</td>
+                  <td>103</td>
+              </tr>
+              <tr>
+                  <td>George Russell</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>103</td>
+              </tr>
+              <tr>
+                  <td>Oscar Piastri</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>21</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+
+</body>
+</html>

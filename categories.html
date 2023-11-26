@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
+</head>
+<body>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+
+    .navbar .nav-list {
+      list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        overflow: hidden;
+        background-color: #ff0000;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .nav-item {
+        flex: 1;
+    }
+
+    .navbar .nav-link {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .navbar .nav-link:hover {
+        background-color: #111;
+    }
+
+    @media (max-width: 600px) {
+    .navbar .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar .nav-item {
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar .nav-link {
+        padding: 10px;
+    }
+}
+
+    .categories-section {
+      width: 80%;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white; /* White background for content */
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    }
+
+    .categories-section h1 {
+      text-align: center;
+    }
+
+    .categories-section p {
+      line-height: 1.6;
+      color: #333; /* Dark grey color for text */
+    }
+
+    ul {
+      background-color: #fff; /* White background for list */
+      padding: 15px;
+      border-radius: 5px;
+      list-style-type: none; /* Removes default list styling */
+    }
+
+    ul li {
+      padding: 5px 0;
+      border-bottom: 1px solid #ddd; /* Light grey line between items */
+    }
+
+    ul li:last-child {
+      border-bottom: none; /* Removes border from the last item */
+    }
+  </style>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="/">Domov</a></li>
+            <li class="nav-item"><a class="nav-link" href="/interesting_facts.html">Zaujimavosti</a></li>
+            <li class="nav-item"><a class="nav-link" href="/history.html">História</a></li>
+            <li class="nav-item"><a class="nav-link" href="/images.html">Obrázky</a></li>
+            <li class="nav-item"><a class="nav-link" href="/categories.html">Kategórie</a></li>
+        </ul>
+    </nav>
+
+    <div class="categories-section">
+      <h1>Kategórie</h1>
+      <p>Formula má kategórie cez ktoré musí prejsť každý jazdec aby sa dostal na úplný vrchol.</p>
+    
+      <p>Prvá kategória je F4, potom sú to F3 a F2. Ak dokážu prejsť mladí jazdci cez tieto kategórie, stále to neznamená to, že sa dostanú do F1.</p>
+      
+      <p>Tento druh motošportu je najdrahší.</p>
+      
+      <ul>
+        <li>F4 - Prvý krok na ceste k F1</li>
+        <li>F3 - Vyššia úroveň, bližšie k premiérovému okruhu</li>
+        <li>F2 - Posledná prekážka pred F1, kde sa talenti zúročia</li>
+        <!-- You can add more list items here if necessary -->
+      </ul>
+    </div>
+</body>
+</html>
